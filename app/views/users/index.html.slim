@@ -1,0 +1,102 @@
+- provide(:title, 'All users') 
+h1 All users
+
+/ul class="users"
+  - @users.each do |user| 
+    li.allus
+      = gravatar_for user
+      = link_to user.name, user 
+
+
+.container2 id="MOT" 
+	.box
+		
+		.codepen
+			.bg-hello.cp-big
+              .title2
+						h1.jjj Besyari
+			.hello
+				h1.jjj このアプリに登録したユーザーを見ることが出来ます。
+               
+				button class="btnOpen" onclick="OpenMOT()" Check 
+		.team class="users" 
+           button class="btnClose" onclick="CloseMOT()"&times;
+		   - @users.each do |user|
+			
+			
+            .data-for-thumbnail 
+				.bg-header.av
+			        .title2.allus
+					    = link_to user.name, user 
+                        //h1.jjj がく
+					    //p.lll 20歳/肥満児
+				.about
+					h2.kkk About
+					p.lll サンプル
+				
+				.social-media
+					.col-2
+						.tooltips.left@がく
+						a class="tw" href="https://twitter.com" target="blank_"
+					
+					/.col-2
+					/	.tooltips.right@tsabat
+					/	a class="cp-link" href="https://codepen.io/tsabat" target="blank_"
+
+            /.data-for-thumbnail
+                .bg-header.ts
+                    .title2
+                        h1.jjj もり
+                        p.lll 21歳/男
+                         
+                .about
+                    h2.kkk About
+                    p.lll バイクが好きです。
+                            
+                .social-media
+                    .col-2
+                      .tooltips.left@もり
+                      a class="tw" href="https://twitter.com" target="blank_"
+                                
+            .data-for-thumbnail
+				.bg-header.cp-big
+					.title2
+						h1.jjj Besyari
+						p.lll 登録ユーザー
+				
+				.about
+					h2.kkk About
+					p.lll Besyariに登録したユーザープロフィールを確認することが出来ます。
+				
+				.social-media
+					.col-2
+						.tooltips.right@Besyari
+						a class="tw" href="https://twitter.com" target="blank_"
+					
+
+
+            .middle
+				button class="prev" onclick="prev(-1)"
+				button class="next" onclick="next(1)"
+				.people
+				  .thumbnail_1
+                    span class="cp"
+
+				  .thumbnail_2
+                    span class="ts"
+					
+                  .thumbnail_3
+                    span class="av"
+					/.thumbnail_4
+                    /　　span class="cc"
+					/.thumbnail_5
+                    /　　span class="mm"
+					/.thumbnail_6
+                    /　　span class="ja"
+					/.thumbnail_7
+                    /　　span class="rs"
+					/.thumbnail_8
+                    /　　span class="kf"
+		
+// This is not part of Pen 
+a class="me" href="https://codepen.io/uzcho_/pens/popular/?grid_type=list" target="_blank" style="color:#000"       
