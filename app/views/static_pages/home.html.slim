@@ -1,5 +1,5 @@
 .center.jumbotron
-  h1 Besyari
+  h1.sub ニュースを読むだけで、就活できる。
   .load
     .lds-css.ng-scope
     .lds-spinner style="width:100%;height:100%"
@@ -54,17 +54,17 @@
       div
       div
       div
-      
-h2
-  p 
-    |
-      This is the home page for the  
-    = link_to "besyari", static_pages_about_path
-  
+
+  h2
+    p.home
+      |
+        まずは無料新規登録から
 
 
-  = link_to "新規登録", signup_path, class: "btn btn-lg btn-primary" 
- 
- 
-  p 既に登録したユーザーのプロフィールを確認できます
-  = link_to "こちらから！" , users_index_path
+
+
+  = link_to "新規登録", signup_path, class: "btn-btn-lg-btn-primary"
+
+
+  //p 既に登録したユーザーのプロフィールを確認できます
+  //= link_to "こちらから！" , users_index_path
