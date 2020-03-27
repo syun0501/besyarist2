@@ -69,6 +69,10 @@
   //p 既に登録したユーザーのプロフィールを確認できます
   //= link_to "こちらから！" , users_index_path
 
+.campain
+  a href="/static_pages/help"
+    img src="/assets/campain.png"
+
 .box2
   .text1
     h3.phot2 就活ソリューション
@@ -119,11 +123,22 @@
   .home1 まずは無料新規登録から
   = link_to "新規登録", signup_path, class: "btn-btn-lg-btn-primary1"
 
+/ .campain2
+/   a href="/static_pages/help"
+/     img src="/assets/campain.png"
+
+.hidden_box
+  label for="label1"
+    a href="/static_pages/help"
+      img src="/assets/campain.png"
+  input#label1 type="checkbox" /
+  .hidden_show
+
 .text1
   h3.phot よくある質問
 .text1
     dl.faq
-      dt 質問テキスト
-      dd 答えテキスト
-      dt 質問テキスト
-      dd 答えテキスト
+      dt ディスカッションはどの様に行われるのでしょうか？
+      dd 同じニュースをチェックしている企業からオファーが届きます。待つだけでなく、コメントを書くことでアピールすることもでき、<br>学生が企業にオファーを送ることもできます。
+      dt 5分間の面談とはどのような場なのでしょうか？
+      dd 双方の理解を深めることが目的のカジュアルな面談です。少し話して、より興味が持てるかを確認することができます。

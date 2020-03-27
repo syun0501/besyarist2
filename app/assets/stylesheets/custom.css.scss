@@ -987,14 +987,14 @@ p.phot3 {
   margin-bottom: 15px;
 }
 .pict2 img {
-  max-width: 900px;
+  max-width: 980px;
   height: auto;
 }
 
 .shinki {
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 p.home1 {
   color: black;
@@ -1089,4 +1089,268 @@ p.phot1 {
 }
 .faq dd:last-child{
   margin-bottom: 0;
+}
+
+.campain img {
+  max-width: 150px;
+  height: auto;
+  position:absolute;
+  margin-left: 10px;
+  margin-top: -100px;
+}
+
+
+/************************************
+** ボックスナビ
+************************************/
+// .p-nav{
+//   margin:2em 0;/* 全体外余白 */
+//   padding:0;/* 全体内余白 */
+//   }
+//   .p-nav ul{
+//   display:-webkit-box;
+//   display:-ms-flexbox;
+//   display:flex;
+//   -ms-flex-wrap: wrap;
+//   flex-wrap: wrap;
+//   -webkit-box-pack: center;
+//   -ms-flex-pack: center;
+//   justify-content: center;
+//   list-style:none;
+//   margin:0;
+//   padding:0;
+//   border:none;
+//   }
+//   .p-nav ul li{
+//   -ms-flex-preferred-size: calc(100%/4);/* 4列 */
+//   flex-basis: calc(100%/4);/* 4列 */
+//   margin:0;
+//   padding:0;
+//   text-align:center;
+//   box-shadow: inset 1px 1px 0 0 #e0ddd1, 1px 1px 0 0 #e0ddd1, 1px 0 0 0 #e0ddd1;/* 罫線 */
+//   display:-webkit-box;
+//   display:-ms-flexbox;
+//   display:flex;
+//   -webkit-box-align: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+//   -webkit-box-orient: vertical;
+//   -webkit-box-direction: reverse;
+//   -ms-flex-direction: column-reverse;
+//   flex-direction: column-reverse;
+//   min-height:100px;/* 最低の高さ */
+//   cursor:pointer;
+//   background:#fff;/* 背景色 */
+//   }
+//   .p-nav ul li:hover{
+//   z-index:2;
+//   box-shadow: inset 2px 2px 0 0 #f6a068, 2px 2px 0 0 #f6a068, 2px 0 0 0 #f6a068, 0 2px 0 0 #f6a068;/* 罫線(マウスホバー) */
+//   transition: 0.35s ease-in-out;
+//   }
+//   .p-nav ul li:before{
+//   content:unset !important;
+//   }
+//   .p-nav ul li a{
+//   display:block;
+//   padding: 0.5em 1em;/* 内余白 */
+//   text-decoration:none;
+//   width:100%;
+//   }
+//   .p-nav ul li a:hover{
+//   background:none;
+//   opacity:1;
+//   }
+//   .p-nav ul li a img{
+//   max-width:50% !important;/* 画像横幅 */
+//   height: auto !important;
+//   filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.1));/* 画像影 */
+//   display: inline-block;
+//   }
+//   .p-nav .p-nav-title{
+//   display: block;
+//   color: #666;/* 文字色 */
+//   font-size: 0.7em;/* 文字大きさ */
+//   letter-spacing: 1px;
+//   font-weight: 600;/* 文字太さ */
+//   text-align: center;
+//   line-height: 1.5;/* 文字行間高さ */
+//   }
+//   /* サイドバー */
+//   .sidebar .p-nav ul li{
+//   -ms-flex-preferred-size: calc(100%/2);/* 2列 */
+//   flex-basis: calc(100%/2);/* 2列 */
+//   }
+//   /* スマホ */
+//   @media screen and (max-width: 559px) {
+//     .p-nav ul li{
+//       -ms-flex-preferred-size: calc(100%/2);/* 2列 */
+//       flex-basis: calc(100%/2);/* 2列 */
+//     }
+//   }
+//   /* fontawesome */
+//   .p-nav ul li a i,.p-nav ul li a svg{
+//   font-size: 40px;/* アイコン大きさ */
+//   padding: 10px 0;/* アイコン余白 */
+//   color: #f6a068;/* アイコン色 */
+//   display:inline-block;
+//   }
+//   /* fontawesome(2番目) */
+//   .p-nav ul li:nth-of-type(2) a i,.p-nav ul li:nth-of-type(2) a svg{
+//   color:#f6a068;/* アイコン色 */
+//   }
+//   /* fontawesome(3番目) */
+//   .p-nav ul li:nth-of-type(3) a i,.p-nav ul li:nth-of-type(3) a svg{
+//   color:#f6a068;/* アイコン色 */
+//   }
+//   /* fontawesome(4番目) */
+//   .p-nav ul li:nth-of-type(4) a i,.p-nav ul li:nth-of-type(4) a svg{
+//   color:#f6a068;/* アイコン色 */
+//   }
+
+/*キャンペーン*/
+.hidden_box {
+  text-align: center;
+  margin: 2em auto 2em;/*前後の余白*/
+  padding: 10px;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+    padding: 15px;
+    font-weight: bold;
+    border: solid 2px black;
+    cursor :pointer;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+    background: #efefef;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
+
+li.campan img {
+  width: 200px;
+}
+
+//tシャツ
+ul.cam {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style:none;
+  margin:0;
+  padding:0;
+  border:none;
+}
+ul.cam li.campan {
+  -ms-flex-preferred-size: calc(100%/4);/* 4列 */
+  flex-basis: calc(100%/4);/* 4列 */
+  margin:0;
+  padding:0;
+  text-align:center;
+  box-shadow: inset 1px 1px 0 0 #e0ddd1, 1px 1px 0 0 #e0ddd1, 1px 0 0 0 #e0ddd1;/* 罫線 */
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  min-height:100px;/* 最低の高さ */
+  cursor:pointer;
+  background:#fff;/* 背景色 */
+}
+ul.cam li.campan:hover {
+  z-index:2;
+  box-shadow: inset 2px 2px 0 0 #ffee00, 2px 2px 0 0 #ffee00, 2px 0 0 0 #ffee00, 0 2px 0 0 #ffee00;/* 罫線(マウスホバー) */
+  transition: 0.35s ease-in-out;
+}
+ul.cam li.campan:before {
+  content:unset !important;
+}
+ul.cam li.campain a {
+  display:block;
+  padding: 0.5em 1em;/* 内余白 */
+  text-decoration:none;
+  width:100%;
+}
+ul.cam li.campan a:hover {
+  background:none;
+  opacity:1;
+}
+ul.cam li.campan a img {
+  max-width:50% !important;/* 画像横幅 */
+  height: auto !important;
+  filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.1));/* 画像影 */
+  display: inline-block;
+}
+span.p-nav-title {
+  display: block;
+  color: #666;/* 文字色 */
+  font-size: 0.7em;/* 文字大きさ */
+  letter-spacing: 1px;
+  font-weight: 600;/* 文字太さ */
+  text-align: center;
+  line-height: 1.5;/* 文字行間高さ */
+}
+
+/* スマホ */
+@media screen and (max-width: 559px) {
+  ul.cam li.campain {
+    -ms-flex-preferred-size: calc(100%/2);/* 2列 */
+    flex-basis: calc(100%/2);/* 2列 */
+  }
+}
+/* fontawesome */
+ul.cam li.campain a i, ul.cam li.campain a svg{
+  font-size: 40px;/* アイコン大きさ */
+  padding: 10px 0;/* アイコン余白 */
+  color: #f6a068;/* アイコン色 */
+  display:inline-block;
+}
+/* fontawesome(2番目) */
+ul.cam li.campain:nth-of-type(2) a i,ul.cam li.campain:nth-of-type(2) a svg{
+  color:#f6a068;/* アイコン色 */
+}
+/* fontawesome(3番目) */
+ul.cam li.campain:nth-of-type(3) a i,ul.cam li.campain:nth-of-type(3) a svg{
+  color:#f6a068;/* アイコン色 */
+}
+/* fontawesome(4番目) */
+ul.cam li.campain:nth-of-type(4) a i,ul.cam li.campain:nth-of-type(4) a svg{
+  color:#f6a068;/* アイコン色 */
+}
+
+.campain2 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
