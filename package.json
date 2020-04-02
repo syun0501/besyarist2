@@ -1,5 +1,7 @@
 {
   "name": "besyaristsyun2",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "newsapi": "^2.4.0"
+  }
 }
