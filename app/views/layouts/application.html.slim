@@ -22,9 +22,11 @@ html
         nav
           ul.nav.navbar-nav.navbar-right
             li = link_to 'マガジン',   static_pages_help_path, target: "_blank"
-            li = link_to 'newScool',   static_pages_home_path
+            //li = link_to 'newScool',   static_pages_home_path
+            li
+              a href="http://newscool-discussion.mystrikingly.com/"  NEWSCOOL
             li = link_to '新規登録',   users_new_path
-            /li = link_to 'ログイン', sessions_new_path
+
             - if logged_in?
               li.dropdown
                 a.dropdown-toggle  href="#"  data-toggle="dropdown"
