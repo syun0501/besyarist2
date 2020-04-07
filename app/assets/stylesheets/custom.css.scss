@@ -74,10 +74,12 @@ h1.sub {
 
 .btn-btn-lg-btn-primary {
   display: inline-block;
-  max-width: 180px;
-  text-align: left;
+  //max-width: 180px;
+  width: 300px;
+  text-align: center;
   border: 2px solid #fbff02;
-  font-size: 16px;
+  //font-size: 16px;
+  font-size: 20px;
   color: #fffb00;
   text-decoration: none;
   font-weight: bold;
@@ -998,12 +1000,15 @@ p.phot3 {
 }
 p.home1 {
   color: black;
+  font-size: 15px;
 }
 .btn-btn-lg-btn-primary1 {
   display: inline-block;
-  max-width: 180px;
-  text-align: left;
+  //max-width: 180px;
+  width: 300px;
+  text-align: center;
   font-size: 16px;
+  font-size: 20px;
   color: rgb(24, 30, 38);
   font-weight: bold;
   border-width: 2px;
