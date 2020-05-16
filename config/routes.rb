@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'newsalert/alert'
   get 'sessions/new'
   get 'users/new'
   get 'users/index'
@@ -12,5 +13,6 @@ Rails.application.routes.draw do
   delete 'logout'  => 'sessions#destroy'
   resources :users
   root 'static_pages#home'
+  get   'newsalert/alert'  =>  'newsalert#alert'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

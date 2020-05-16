@@ -1,0 +1,2 @@
+module NewsalertHelper
+end
