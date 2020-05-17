@@ -3,6 +3,18 @@ class SessionsController < ApplicationController
   end
 
   def create
+    user = User.find_or_create_from_auth(request.env['omniauth.auth'])
+    session[:user_id] = user.id
+    redirect_to root_path
+  end
+
+  def destroy
+    reset_session
+    redirect_to root_path
+  end
+
+
+  def create
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
       log_in user
